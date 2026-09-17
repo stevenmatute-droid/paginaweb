@@ -1,12 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
+    <title>Aviones de Guerra</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Hola mundo! STEVEN MATUTE </h1>
-    <p>Mi primera página publicada en GitHub.</p>
+
+    <header>
+        <div class="logo">✈ Aviones de Guerra</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <h1>Aviones de Guerra</h1>
+            <p>Potencia, tecnología y defensa en el cielo.</p>
+        </section>
+
+        <section class="galeria" id="galeria">
+
+            <article class="tarjeta">
+                <img src="img/avion1.jpg" alt="Avión de combate">
+                <div class="contenido">
+                    <h2>F-22 Raptor</h2>
+                    <p>
+                        Avión de combate de quinta generación,
+                        reconocido por su tecnología avanzada
+                        y capacidad de superioridad aérea.
+                    </p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/avion2.jpg" alt="Avión de combate Su-57">
+                <div class="contenido">
+                    <h2>Sukhoi Su-57</h2>
+                    <p>
+                        Caza de quinta generación diseñado
+                        para misiones de superioridad aérea
+                        y operaciones de combate.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Aviones de Guerra © 2026. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
