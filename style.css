@@ -1,0 +1,142 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #071321;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 5%;
+    border-bottom: 1px solid #26374a;
+    background: #0a1726;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #b5c4d8;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #42a5f5;
+}
+
+/* Título principal */
+.hero {
+    text-align: center;
+    padding: 65px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #a8bbd2;
+    font-size: 21px;
+}
+
+/* Galería de dos fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 5% 60px;
+}
+
+.tarjeta {
+    background: #101f30;
+    border: 1px solid #1c344b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: #42a5f5;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.contenido h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.contenido p {
+    color: #b5c4d8;
+    font-size: 17px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    border-top: 1px solid #26374a;
+    padding: 30px 20px;
+    color: #8498b1;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .tarjeta img {
+        height: 240px;
+    }
+}
