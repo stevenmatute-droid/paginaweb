@@ -140,3 +140,32 @@ footer {
         height: 240px;
     }
 }
+.canva-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.canva-section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.canva-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.canva-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
